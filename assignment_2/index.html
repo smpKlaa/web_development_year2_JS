@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. Assignment</title>
+    <script type="module" src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div>
+      <h1>2. Assignment - Distance between points</h1>
+    </div>
+    <hr />
+    <div>
+      <p>
+        This program will calculate the distance of two points in a 2D plane.
+      </p>
+      <form id="form">
+        <label for="x1Input">
+          X of point A:
+          <input id="x1Input" type="number" step="any" inputmode="decimal" />
+        </label>
+        <label for="y1Input">
+          Y of point A:
+          <input id="y1Input" type="number" step="any" inputmode="decimal" />
+        </label>
+        <br />
+        <label for="x2Input">
+          X of point B:
+          <input id="x2Input" type="number" step="any" inputmode="decimal" />
+        </label>
+        <label for="y2Input">
+          Y of point B:
+          <input id="y2Input" type="number" step="any" inputmode="decimal" />
+        </label>
+        <br />
+        <button id="calculateButton" type="submit">Calculate</button>
+      </form>
+    </div>
+    <div>
+      <p>Distance between point A and point B: <span id="resultSpan"></span></p>
+    </div>
+  </body>
+</html>

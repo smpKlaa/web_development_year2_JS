@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. Assignment</title>
+    <script type="module" src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div>
+      <h1>1. Assignment - Celsius to Fahrenheit and Kelvin</h1>
+    </div>
+    <hr />
+    <div>
+      <p>
+        This program will convert given celsius value to fahrenheit and kelvin.
+      </p>
+      <form id="form">
+        <label for="celsiusInput">
+          Temperature in celsius:
+          <input
+            id="celsiusInput"
+            type="number"
+            step="any"
+            inputmode="decimal"
+          />
+        </label>
+        <button id="convertButton" type="submit">Convert</button>
+      </form>
+    </div>
+    <div>
+      <p>in kahrenheit: <span id="fResult"></span></p>
+      <p>in kelvin: <span id="kResult"></span></p>
+    </div>
+  </body>
+</html>
