@@ -2,34 +2,24 @@
 
 const numbersSpan = document.getElementById("numbersSpan");
 
-// Create an empty array called numbers.
+// Define an empty array to store the numbers entered by the user.
 let numbers = [];
 
-// Prompt the user to enter five numbers, one by one, and add each entered number to the numbers array using the push() method.
-for (let i = 0; i < 5; i++) {
-  numbers.push(parseInt(prompt(`Enter the ${i + 1}. number.`)));
+// Use a loop (e.g., while or do...while) to prompt the user for numbers and add them to the array until the user decides to stop.
+let s = "";
+do {
+  s = prompt("Please enter a number (leave blank to stop).");
+  numbers.push(parseInt(s));
+} while (s !== "");
+
+// Use the for...of loop to iterate over the entered values stored in the array.
+for (const num of numbers) {
+  // Inside the loop, check if the current number is even using the modulo operator %.
+  if (num % 2 == 0) {
+    // If the current number is even, display it on the HTML document.
+    numbersSpan.textContent += num + " ";
+  }
 }
-// Display the contents of the numbers array on the HTML document or in the console.
-numbersSpan.textContent += numbers;
 
-// Prompt the user to enter a number and check if the entered number is included in the numbers array using the includes() method.
-const n = parseInt(prompt("Enter a number."));
-
-// Display a message indicating whether the entered number is found or not found in the numbers array.
-if (numbers.includes(n)) {
-  console.log("Numbers includes the given number.");
-} else {
-  console.log("Numbers does not include the given number.");
-}
-
-// Remove the last number from the numbers array using the pop() method.
-numbers.pop();
-
-// Display the updated numbers array on the HTML document or in the console.
-console.log("Updated numbers: ", numbers);
-
-// Sort the numbers array in ascending numerical order using the sort() method with a custom comparison function.
-numbers.sort((a, b) => a - b);
-
-// Display the sorted numbers array on the HTML document or in the console.
-console.log("Sorted numbers: ", numbers);
+// After the loop completes, display a message indicating the end of the program.
+alert("Program has ended.");
