@@ -35,11 +35,11 @@ for (const item of todoList) {
   const inputElement = document.createElement("input");
   const labelElement = document.createElement("label");
 
-  (inputElement.id = "todo-"), item.id;
+  inputElement.id = "todo-" + item.id;
   inputElement.type = "checkbox";
   inputElement.checked = item.completed;
 
-  (labelElement.htmlFor = "todo-"), item.id;
+  labelElement.htmlFor = "todo-" + item.id;
   labelElement.textContent = item.task;
 
   listItemElement.appendChild(inputElement);
