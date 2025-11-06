@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3. Assignment</title>
+    <script type="module" src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div>
+      <h1>3. Assignment - Triangle type from side lenghts.</h1>
+    </div>
+    <hr />
+    <div>
+      <p>
+        This program will determine the type of triangle depenging on the lenght
+        of each side of the triangle.
+      </p>
+      <form id="form">
+        <label for="side1Input">
+          Length of side 1:
+          <input id="side1Input" type="number" step="any" inputmode="decimal" />
+        </label>
+        <br />
+        <label for="side2Input">
+          Length of side 2:
+          <input id="side2Input" type="number" step="any" inputmode="decimal" />
+        </label>
+        <br />
+        <label for="side3Input">
+          Length of side 3:
+          <input id="side3Input" type="number" step="any" inputmode="decimal" />
+        </label>
+        <br />
+        <button id="calculateButton" type="submit">
+          What type of triangle?
+        </button>
+      </form>
+    </div>
+    <div>
+      <p id="resultParagraph"></p>
+    </div>
+  </body>
+</html>

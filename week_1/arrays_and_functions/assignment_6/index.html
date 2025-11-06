@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6. Assignment</title>
+    <script type="module" src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div>
+      <h1>6. Assignment - Favorite movies</h1>
+    </div>
+    <hr />
+    <div>
+      <form id="form">
+        <label for="nameInput">
+          Movie name:
+          <input id="nameInput" type="text" />
+        </label>
+        <label for="ratingInput">
+          Movie rating:
+          <input
+            id="ratingInput"
+            type="number"
+            inputmode="numeric"
+            step="1"
+            min="1"
+            max="5"
+          />
+        </label>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <div id="content">
+      <h3>Highest rated movie: <span id="highestRatedMovieSpan"></span></h3>
+      <h3>Movies</h3>
+      <ol id="moviesList"></ol>
+    </div>
+  </body>
+</html>
